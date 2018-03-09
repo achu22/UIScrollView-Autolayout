@@ -10,9 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var scrView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let text: NSString = "hellojbjkwbecjkbrvc r,mnv ebvkebvkjqerbvqrv\nkhvckuyqgckuqvckhjrvckhrvcukyyvwec\nqwkjdhbckjhwvc\n\n\n\nqkwuyegfuyqegckuyqwegckuyqwec\n\neukygduyqwegduyqwegfyewgf\n\nwekuyfgquwygfquwyegfkuyqwegf\n\nekufguyewgfuygfuyrgfuyrgfrygfjqwehfjqwegfiuwqrgfqr3hbfkuyq"
+        
+        
+        myLabel.text = text as String
+        
+        print(scrView.contentSize.height)
+        
     }
 
     override func didReceiveMemoryWarning() {
